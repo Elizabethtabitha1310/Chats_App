@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment3">
+    <fragment
+        android:id="@+id/homeFragment3"
+        android:name="com.example.chats_app.fragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment3_to_chatFragment3"
+            app:destination="@id/chatFragment3" />
+        <action
+            android:id="@+id/action_homeFragment3_to_settingFragment3"
+            app:destination="@id/settingFragment3" />
+        <action
+            android:id="@+id/action_homeFragment3_to_chatfromHome3"
+            app:destination="@id/chatfromHome3" />
+    </fragment>
+    <fragment
+        android:id="@+id/chatFragment3"
+        android:name="com.example.chats_app.fragments.ChatFragment"
+        android:label="fragment_chat"
+        tools:layout="@layout/fragment_chat" >
+        <action
+            android:id="@+id/action_chatFragment3_to_homeFragment3"
+            app:destination="@id/homeFragment3" />
+    </fragment>
+    <fragment
+        android:id="@+id/chatfromHome3"
+        android:name="com.example.chats_app.fragments.ChatfromHome"
+        android:label="fragment_chatfrom_home"
+        tools:layout="@layout/fragment_chatfrom_home" >
+        <action
+            android:id="@+id/action_chatfromHome3_to_homeFragment3"
+            app:destination="@id/homeFragment3" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingFragment3"
+        android:name="com.example.chats_app.fragments.SettingFragment"
+        android:label="fragment_setting"
+        tools:layout="@layout/fragment_setting" >
+        <action
+            android:id="@+id/action_settingFragment3_to_homeFragment3"
+            app:destination="@id/homeFragment3" />
+    </fragment>
+</navigation>
